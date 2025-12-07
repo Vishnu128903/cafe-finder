@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Café Finder</title>
+
+  <!-- Leaflet core CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1 class="title">Café Finder</h1>
+
+      <form id="searchForm" class="search-form">
+        <label for="searchInput">Search area</label>
+        <div class="search-input-wrapper">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Type area  "
+            autocomplete="off"
+          />
+          <button type="submit">Search</button>
+        </div>
+
+        <!-- Autocomplete suggestions -->
+        <ul id="suggestions" class="suggestions"></ul>
+
+      </form>
+
+      <section class="results">
+        <h2>Nearby cafés</h2>
+        <ul id="cafeList" class="cafe-list">
+          <!-- Filled dynamically -->
+        </ul>
+      </section>
+    </aside>
+
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <!-- Leaflet core JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
