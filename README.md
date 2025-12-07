@@ -52,7 +52,6 @@ cafe-finder/
 │  └─ styles.css     # All styling for layout & dark theme
 ├─ js/
 │  └─ app.js         # Core logic: map, search, suggestions, cafés list
-│
 └─ assets/
    └─ coffee.svg # Custom coffee marker icon
 ```
